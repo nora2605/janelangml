@@ -6,8 +6,8 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@nuxt/kit": "3.2.3",
     "nuxt": "latest",
-    "nuxt3": "latest",
     "vuetify": "latest"
   }
 }

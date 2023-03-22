@@ -8,11 +8,27 @@
 
 <script>
 export default {
-  name: 'App',
+  name: 'Janelang.ml',
   computed: {
     isDarkMode() {
       return true;
     }
+  },
+  data: {
+    title: 'Jane Homepage'
+  },
+  head: {
+    title: this.title,
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Janelang homepage'
+      }
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   }
 }
 </script>
