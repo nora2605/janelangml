@@ -6,7 +6,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt-start": "latest",
+    "nuxt": "latest",
     "nuxt3": "latest",
     "vuetify": "latest"
   }
