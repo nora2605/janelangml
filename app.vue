@@ -1,8 +1,10 @@
 <template>
   <div :class="['container', { 'dark': isDarkMode }]">
     <h1 :class="['title', { 'dark': isDarkMode }]">Sorry!</h1>
-    <p :class="['subtitle', { 'dark': isDarkMode }]">There's no content available for janelang.ml at the moment. Please check back later.</p>
-    <a href="https://github.com/nora2605/janelangml" target="_blank" rel="noopener noreferrer" :class="['button', { 'dark': isDarkMode }]">What is this?</a>
+    <p :class="['subtitle', { 'dark': isDarkMode }]">There's no content available for janelang.ml at the moment. Please
+      check back later.</p>
+    <a href="https://github.com/nora2605/janelangml" target="_blank" rel="noopener noreferrer"
+      :class="['button', { 'dark': isDarkMode }]">What is this?</a>
   </div>
 </template>
 
@@ -14,27 +16,32 @@ export default {
       return true;
     }
   },
-  data: {
-    title: 'Jane Homepage'
+  data() {
+    return {
+      title: 'Jane Homepage'
+    }
   },
-  head: {
-    title: this.title,
-    meta: [
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Janelang homepage'
-      }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Janelang homepage'
+        }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
   }
 }
 </script>
 
 <style>
-html, body {
+html,
+body {
   margin: 0px;
 }
 
