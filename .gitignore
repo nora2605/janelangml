@@ -43,6 +43,7 @@ typings/
 
 # Optional npm cache directory
 .npm
+.yarn
 
 # Optional eslint cache
 .eslintcache
@@ -68,6 +69,7 @@ typings/
 
 # nuxt.js build output
 .nuxt
+.output
 
 # Nuxt generate
 dist
