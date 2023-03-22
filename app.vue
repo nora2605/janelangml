@@ -16,25 +16,13 @@ export default {
       return true;
     }
   },
-  data() {
-    return {
-      title: 'Jane Homepage'
-    }
-  },
-  head() {
-    return {
-      title: this.title,
+  setup() {
+    useHead({
+      title: 'Janelang.ml',
       meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Janelang homepage'
-        }
-      ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { name: 'description', content: 'Jane language homepage' }
       ]
-    }
+    })
   }
 }
 </script>
