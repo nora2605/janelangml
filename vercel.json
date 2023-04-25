@@ -11,14 +11,6 @@
     {
       "source": "/jane-by-example/:match*",
       "destination": "https://jbe-book.vercel.app/:match*"
-    },
-    { 
-      "source": "/",
-      "destination": "https://janelangml.vercel.app/" 
-    },
-    {
-      "source": "/:match*",
-      "destination": "https://janelangml.vercel.app/:match*"
     }
   ]
 }
