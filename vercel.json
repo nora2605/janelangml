@@ -12,5 +12,11 @@
       "source": "/jane-by-example/:match*",
       "destination": "https://jbe-book.vercel.app/:match*"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/jane-by-example",
+      "destination": "/jane-by-example/"
+    }
   ]
 }
