@@ -1,21 +1,14 @@
 <template>
-  <div :class="['container', { 'dark': isDarkMode }]">
-    <h1 :class="['title', { 'dark': isDarkMode }]">Sorry!</h1>
-    <p :class="['subtitle', { 'dark': isDarkMode }]">There's no content available for janelang.ml at the moment. Please
-      check back later.</p>
-    <a href="https://github.com/nora2605/janelangml" target="_blank" rel="noopener noreferrer"
-      :class="['button', { 'dark': isDarkMode }]">What is this?</a>
+  <div>
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Janelang.ml',
-  computed: {
-    isDarkMode() {
-      return true;
-    }
-  },
   setup() {
     useHead({
       title: 'Janelang.ml',

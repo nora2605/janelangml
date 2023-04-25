@@ -9,5 +9,8 @@
     "@nuxt/kit": "3.2.3",
     "nuxt": "latest",
     "vuetify": "latest"
+  },
+  "dependencies": {
+    "vite": "^4.3.1"
   }
 }
