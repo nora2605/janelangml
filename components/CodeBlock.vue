@@ -2,11 +2,10 @@ import { ClientOnly, ServerPlaceholder } from '../.nuxt/components';
 <template>
   <div
     class="codeblock text-lg my-6 p-2 bg-gray-900 text-white rounded-md font-instrument-sans"
-  >
-    <img width="20" height="20" class="inline" src="janelogo.svg" />{{
-      " " + filename
-    }}
-    <a :onclick="ctc(code)" href="#" class="text-gray-500 text-sm hover:underline">copy</a>
+  ><header class="justify-between flex items-center px-2 border rounded-md border-gray-400">
+    <div><img width="20" height="20" class="inline mr-2" src="janelogo.svg" />{{filename}}</div>
+    <a :onclick="ctc(code)" href="#" class="text-right text-gray-500 text-sm hover:underline">copy</a>
+</header>
     <pre
       class="code font-maple-mono language-jane"
     ><code v-for="line in code.replace(/\r/g, '').split('\n')">{{ line + '\n' }}</code></pre>
