@@ -1,5 +1,4 @@
-export default function About() {
-  return (
+<template>
     <main class="text-gray-100 text-center px-4 mx-auto pt-24 justify-evenly">
       <h1 class="spin text-4xl font-bold mb-4 text-white">What is Jane?</h1>
       <p class="text-lg mb-8 text-gray-200">
@@ -30,5 +29,4 @@ export default function About() {
         <li>Discord: Nora2605#3789 (feel free to add me!)</li>
       </ul>
     </main>
-  );
-}
+</template>
