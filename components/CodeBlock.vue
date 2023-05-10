@@ -29,7 +29,7 @@ export default {
   mounted() {
     useHead({
         script: [
-            { textContent: "hljs.highlightAll();" }
+            { textContent: "console.log(\"" + this.code.length + "\"); hljs.highlightAll();" }
         ]
     })
   },

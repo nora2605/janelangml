@@ -19,7 +19,7 @@ Check out these amazing uncallback-helled closures:
 
 ```jane
 array.map() element {
-    // wow so much cleaner that (() => {})
+    // wow so much cleaner than (() => {})
 }
 ```
 
@@ -84,7 +84,7 @@ well other programming languages did this already but i find our way particularl
 using
 
 ```jane
-ext <class> {
+ext /* class */ {
 
 }
 ```

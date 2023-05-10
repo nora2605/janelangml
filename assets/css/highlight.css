@@ -23,6 +23,11 @@
     font-style: normal;
 }
 
+.hljs-comment {
+    color: gray;
+    font-style: normal;
+}
+
 pre.code {
     text-rendering: optimizeLegibility;
     white-space: pre-wrap;

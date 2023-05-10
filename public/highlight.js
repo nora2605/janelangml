@@ -2722,6 +2722,7 @@ function Jane(hljs) {
   const NORMAL_KEYWORDS = [
     "file",
     "as",
+    "ext",
     "base",
     "break",
     "case",
@@ -3023,3 +3024,5 @@ function Jane(hljs) {
     ],
   };
 }
+
+hljs.highlightAll();
