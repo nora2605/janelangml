@@ -47,8 +47,5 @@
 </template>
 
 <script setup>
-var { data: mcode } = await useFetch(
-  "http://localhost:3000/snippets/HelloWorld.jn"
-);
-mcode = mcode['_rawValue'].replace(/\r/g, '');
+import mcode from '~/assets/snippets/HelloWorld.jn?raw'
 </script>

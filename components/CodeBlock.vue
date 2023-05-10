@@ -9,7 +9,7 @@ import { ClientOnly, ServerPlaceholder } from '../.nuxt/components';
     <a :onclick="ctc(code)" href="#" class="text-gray-500 text-sm hover:underline">copy</a>
     <pre
       class="code font-maple-mono language-jane"
-    ><code v-for="line in code.split('\n')">{{ line + '\n' }}</code></pre>
+    ><code v-for="line in code.replace(/\r/g, '').split('\n')">{{ line + '\n' }}</code></pre>
   </div>
 </template>
 

@@ -12,4 +12,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  vite: {
+    assetsInclude: [
+      '.jn',
+      '.txt'
+    ]
+  }
 });
