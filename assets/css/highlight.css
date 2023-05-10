@@ -1,0 +1,43 @@
+.hljs-string {
+    color: aqua;
+    font-style: italic bold;
+}
+
+.hljs-keyword {
+    color: pink;
+    font-style: italic;
+}
+
+.hljs-function {
+    color: lightblue;
+    font-style: bold;
+}
+
+.hljs-title {
+    color: aquamarine;
+    font-style: normal;
+}
+
+.hljs-params {
+    color: lightyellow;
+    font-style: normal;
+}
+
+pre.code {
+    text-rendering: optimizeLegibility;
+    white-space: pre-wrap;
+}
+
+pre.code code {
+    counter-increment: line;
+}
+
+pre.code::before {
+    counter-reset: line;
+}
+
+pre.code code::before {
+    content: counter(line);
+    display: inline-block;
+    width: 2em;
+}

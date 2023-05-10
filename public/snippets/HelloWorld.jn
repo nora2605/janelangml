@@ -1,0 +1,5 @@
+file use Jane
+
+fn -s Main(args: str[]) {
+  Tty.WriteLn("Hello World!");
+}

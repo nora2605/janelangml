@@ -13,9 +13,14 @@ export default {
     useHead({
       title: 'Janelang.ml',
       meta: [
-        { name: 'description', content: 'Jane language homepage' }
-      ]
+        { name: 'description', content: 'Jane Language Home' }
+      ],
+      script: [
+        { src: "/highlight.js" }
+      ],
     })
   }
 }
 </script>
+
+<style src="./assets/css/highlight.css" />
