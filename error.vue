@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-export default (await import('vue')).defineComponent({
+export default {
   name: "Error",
   props: {
     error: {
@@ -36,5 +36,5 @@ export default (await import('vue')).defineComponent({
   setup() {
     
   }
-});
+}
 </script>

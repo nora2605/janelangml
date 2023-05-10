@@ -1,7 +1,7 @@
 <template>
   <header class="bg-gray-800 text-white py-4 px-8 flex justify-between items-center">
     <h1 class="text-4xl flex">
-      <img width="40" height="40" src="janelogo.svg" class="mx-3" />
+      <img width="40" height="40" src="/janelogo.svg" class="mx-3" />
       <router-link to="/">The Jane Language</router-link>
     </h1>
     <nav class="hidden md:flex items-center space-x-4">

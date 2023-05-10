@@ -3,7 +3,7 @@ import { ClientOnly, ServerPlaceholder } from '../.nuxt/components';
   <div
     class="codeblock text-lg my-6 p-2 bg-gray-900 text-white rounded-md font-instrument-sans"
   ><header class="justify-between flex items-center px-2 border rounded-md border-gray-400">
-    <div><img width="20" height="20" class="inline mr-2" src="janelogo.svg" />{{filename}}</div>
+    <div><img width="20" height="20" class="inline mr-2" src="/janelogo.svg" />{{filename}}</div>
     <a :onclick="ctc(code)" href="#" class="text-right text-gray-500 text-sm hover:underline">copy</a>
 </header>
     <pre
@@ -13,7 +13,7 @@ import { ClientOnly, ServerPlaceholder } from '../.nuxt/components';
 </template>
 
 <script>
-export default (await import('vue')).defineComponent({
+export default {
   name: "Codeblock",
   props: {
     code: {
@@ -40,5 +40,5 @@ export default (await import('vue')).defineComponent({
         }
     }
   }
-});
+}
 </script>
