@@ -2389,6 +2389,7 @@ var hljs = (function () {
       // we're seeing it)... but we yell loudly about this so that hopefully it's
       // more likely to be caught in development before making it to production
       if (element.children.length > 0) {
+        return;
         if (!options.ignoreUnescapedHTML) {
           console.warn(
             "One of your code blocks includes unescaped HTML. This is a potentially serious security risk.",
