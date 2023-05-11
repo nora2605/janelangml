@@ -1,6 +1,6 @@
 <template>
   <div
-    class="codeblock text-lg my-6 p-2 bg-gray-900 text-white rounded-md font-instrument-sans"
+    class="codeblock text-lg my-6 p-2 bg-gray-900 text-white rounded-md max-w-lg font-instrument-sans"
   >
     <header
       class="justify-between flex items-center px-2 border rounded-md border-gray-400"
@@ -37,20 +37,20 @@ export default {
     },
   },
   mounted() {
-    useHead({
-      script: [
-        {
-          textContent:
-            'console.log("' + this.code.length + '"); hljs.highlightAll();',
-        },
-      ],
+    this.$nextTick(() => {
+      hljs.highlightAll();
     });
     // hack :sunglasses:
-    Array.from(document.getElementsByClassName('copybutton')).forEach(b => {
-        b.onclick = () => {
-            navigator.clipboard.writeText(this.code);
-        }
+    Array.from(document.getElementsByClassName("copybutton")).forEach((b) => {
+      b.onclick = () => {
+        navigator.clipboard.writeText(this.code);
+      };
     });
-  }
+  },
+  updated() {
+    this.$nextTick(() => {
+      hljs.highlightAll();
+    });
+  },
 };
 </script>

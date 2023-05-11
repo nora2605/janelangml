@@ -1,12 +1,11 @@
 <template>
-    <div class="flex flex-col items-center justify-center">
-      <h1 class="text-4xl font-bold mb-6">Getting Started</h1>
-      <div class="max-w-md bg-white rounded-lg shadow-lg p-8">
+    <div class="flex py-8 md:px-8 flex-grow flex-col items-center justify-center">
+      <h1 class="text-4xl text-white font-bold mb-6">Getting Started</h1>
+      <div class="min-w-fit bg-white rounded-lg shadow-lg p-8">
         <h2 class="text-2xl font-bold mb-4">Interactive Tutorial</h2>
         <p class="mb-4">Learn the basics of Jane language through an interactive tutorial.</p>
-        <!-- Replace the following code with your own interactive tutorial component -->
         <div class="border border-gray-300 rounded-md p-4 mb-6">
-          <CodeBlock code="your code here" filename="tutorial.jane" />
+          <Tutorial />
         </div>
         <h2 class="text-2xl font-bold mb-4">Documentation</h2>
         <p class="mb-4">Explore the comprehensive documentation for Jane language.</p>
