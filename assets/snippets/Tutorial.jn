@@ -15,3 +15,55 @@ Tty.WriteLn("${1 / 4}")
 Tty.WriteLn("${1d / 4}")
 Tty.WriteLn("${2^3}")
 Tty.WriteLn("${#W(-1/#e)}")
+///:{"title": "Step 4: binary flags", "description": "This is the only thing unique to this language. The binary keyword flags.", "output": "This executed!\n(This would show up at compile time) Error: cannot alter constant", "filename": "flags.jn", "showInput": true, "inputLabel": "Try declaring a public static function!", "answer": ["fn -ps", "fn -sp", "fn -s -p", "fn -p -s", "fn -s --public", "fn --static --public", "fn --public --static", "fn -p --static", "fn --static -p", "fn --public -s"], "inputValue": "refresh the page to try different orders ;)"}
+fn Method(..arguments) {
+    // This is a regular function!
+}
+fn -s Method2(..arguments) {
+    // This is a static function.
+    // A static function does not depend on instance data;
+    // That means, if a function is in a class, say "ExampleClass"
+    // You can call it (if it's public) using ExampleClass.Method2() instead of
+    // new ExampleClass().Method2() for example
+}
+fn -p Method3(..arguments) {
+    // This one is public, that means it is available to use
+    // outside of the class itself
+}
+fn -O +(Me a, Me b) -> Me {
+    // The -O flag (notice capitalization)
+    // declares an operator for your custom types
+    new(a.value + b.value)
+}
+fn -Oe str(Me a) {
+    // This is an explicit conversion
+    // it uses the operator flag + either -e or -i
+    // e is explicit, i is implicit
+    // you can call this one using (str)Instance
+    a.ToString()
+}
+fn -a Method4()
+// This one is good for interfaces:
+// -a means abstract, abstract function don't declare a body
+fn -p --override Method5(..arguments) {
+    // You can of course spell out the words and arrange them in any order
+    // Override overwrites a function from an interface, or a base class
+    // This is only required if the function is not marked as abstract
+    // When using this you should know what you're doing ;)
+}
+
+fn -s Main(args: str[]) {
+    while -a 1 == 0 {
+        Tty.WriteLn("This executed!")
+    }
+    // -a stands for always, it makes a while always execute at least once
+    let -c my_iq = 0
+    my_iq++ // This errors! -c makes the value constant
+}
+// There are much more but these access modifiers constitute a lot of them
+// Got it? Try it out below:
+///:{"title": "That's it for now!", "description": "Check out the documentation below if you want to learn more!", "filename": "bye.jn", "output": "\r\n👋 ^u^"}
+file use Jane.IDA
+
+let ida = new IDA()
+ida.WaveBye()

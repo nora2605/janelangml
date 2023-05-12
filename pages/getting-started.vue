@@ -1,7 +1,7 @@
 <template>
     <div class="flex py-8 md:px-8 flex-grow flex-col items-center justify-center">
       <h1 class="text-4xl text-white font-bold mb-6">Getting Started</h1>
-      <div class="min-w-fit bg-white rounded-lg shadow-lg p-8">
+      <div class="min-w-fit bg-white rounded-lg shadow-lg pt-8 md:p-8">
         <h2 class="text-2xl font-bold mb-4">Interactive Tutorial</h2>
         <p class="mb-4">Learn the basics of Jane language through an interactive tutorial.</p>
         <div class="border border-gray-300 rounded-md p-4 mb-6">

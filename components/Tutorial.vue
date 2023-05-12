@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="mb-4 max-w-lg">
+  <div class="lg:min-w-lg">
+    <div class="mb-4 max-w-4xl">
       <h3 class="text-lg font-bold mb-2">{{ currentStep.title }}</h3>
       <p class="break-words">{{ currentStep.description }}</p>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="codeblock text-lg my-6 p-2 bg-gray-900 text-white rounded-md max-w-lg font-instrument-sans"
+    class="codeblock text-lg my-6 p-2 bg-gray-900 text-white rounded-md max-w-4xl font-instrument-sans"
   >
     <header
       class="justify-between flex items-center px-2 border rounded-md border-gray-400"
@@ -17,7 +17,7 @@
       </button>
     </header>
     <pre
-      class="code font-maple-mono language-jane"
+      class="code font-maple-mono language-jane text-xs md:text-sm lg:text-lg"
     ><code v-for="line in code.replace(/\r/g, '').split('\n')">{{ line + '\n' }}</code></pre>
   </div>
 </template>
