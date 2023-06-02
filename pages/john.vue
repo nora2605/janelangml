@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col flex-grow bg-gray-900 items-center justify-center">
+  <div class="flex flex-col flex-grow items-center justify-center">
       <h1 class="title">John</h1>
       <p class="subtitle">John</p>
       <a href="https://github.com/nora2605/jane/blob/main/john.md" target="_blank" rel="noopener noreferrer"

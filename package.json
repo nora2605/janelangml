@@ -13,11 +13,16 @@
   "dependencies": {
     "@nuxt/content": "^2.6.0",
     "@tailwindcss/typography": "^0.5.9",
+    "@types/d3": "^7.4.0",
+    "@types/d3-voronoi": "^1.1.9",
     "@types/node": "^20.1.1",
     "autoprefixer": "^10.4.14",
+    "d3": "^7.8.4",
+    "d3-voronoi": "^1.1.4",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
     "vite": "^4.3.1",
+    "voronoi": "^1.0.0",
     "vue": "^3.2.47"
   }
 }
