@@ -8,10 +8,10 @@
 
 <script>
 export default {
-  name: 'Janelang.ml',
+  name: 'jane.luemir.xyz',
   setup() {
     useHead({
-      title: 'Janelang.ml',
+      title: 'jane.luemir.xyz',
       meta: [
         { name: 'description', content: 'Jane Language Home' }
       ],
