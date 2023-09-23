@@ -26,7 +26,7 @@
             PR everything I do on github
           </a>
         </li>
-        <li>Discord: Nora2605#3789 (feel free to add me!)</li>
+        <li>Discord: nora2605 (feel free to add me!)</li>
       </ul>
     </main>
 </template>
