@@ -13,5 +13,10 @@ export default {
       ],
     });
   },
+  setup() {
+    definePageMeta({
+      layout: 'nopad'
+    })
+  }
 };
 </script>

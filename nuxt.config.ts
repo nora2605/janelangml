@@ -3,7 +3,8 @@ import { defineNuxtConfig } from "nuxt/config";
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
   ],
   css: ['~/assets/css/main.css'],
   postcss: {

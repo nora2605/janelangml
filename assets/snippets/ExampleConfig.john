@@ -1,0 +1,6 @@
+name "example-project"
+description "Example project"
+version v1.2.3
+dependencies [
+    "example-dependency"
+]

@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1 class="text-6xl text-center text-white">Trolled there is none (YET)</h1>
+        <h1 class="text-4xl text-center font-bold">Under construction</h1>
     </div>
 </template>

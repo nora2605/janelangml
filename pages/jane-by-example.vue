@@ -1,5 +1,13 @@
 <template>
-    <div class="flex flex-col justify-center items-center flex-grow">
-        <h1 class="text-6xl text-white text-center">how the hell did you get here</h1>
+    <div class="flex flex-row flex-grow items-center justify-evenly">
+        <iframe src="https://jbe-book.vercel.app" class="w-[90vw] h-[80vh] flex flex-grow flex-auto rounded-lg shadow-lg"
+            allowfullscreen="false" loading="eager" name="jane-by-example" referrerpolicy="no-referrer" width="2000px">
+        </iframe>
     </div>
 </template>
+
+<script setup>
+definePageMeta({
+    layout: 'nopad'
+});
+</script>

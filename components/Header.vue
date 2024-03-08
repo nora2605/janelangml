@@ -5,9 +5,6 @@
       <router-link to="/">The Jane Language</router-link>
     </h1>
     <nav class="hidden md:flex items-center space-x-4">
-      <a href="/jane-by-example" active-class="border-teal-300 border-b-2" class="hover:text-teal-300">
-        Jane by Example
-      </a>
       <router-link to="/" active-class="border-teal-300 border-b-2" class="hover:text-teal-300">
         Home
       </router-link>
@@ -16,6 +13,9 @@
       </router-link>
       <router-link to="/docs" active-class="border-teal-300 border-b-2" class="hover:text-teal-300">
         Documentation
+      </router-link>
+      <router-link to="/jane-by-example" active-class="border-teal-300 border-b-2" class="hover:text-teal-300">
+        Jane by Example
       </router-link>
       <router-link to="/dl" active-class="border-teal-300 border-b-2" class="hover:text-teal-300">
         Download
