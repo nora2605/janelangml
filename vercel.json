@@ -1,22 +1,3 @@
 {
-  "rewrites": [
-    {
-      "source": "/jane-by-example",
-      "destination": "https://jbe-book.vercel.app"
-    },
-    {
-      "source": "/jane-by-example/",
-      "destination": "https://jbe-book.vercel.app/"
-    },
-    {
-      "source": "/jane-by-example/:match*",
-      "destination": "https://jbe-book.vercel.app/:match*"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/jane-by-example",
-      "destination": "/jane-by-example/"
-    }
-  ]
+  
 }
